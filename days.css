@@ -1,0 +1,42 @@
+.title {
+    margin: 65px 0px 60px 100px;
+}
+
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 50px;
+  }
+  
+.item {
+    display: inline-block;
+    padding: 14px;
+    text-decoration: none;
+    vertical-align: text-top;
+}
+
+
+.item img {
+    width: auto;
+    height: 718px;
+}
+
+#collection {
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+    padding: 5px;
+    width: min-content;
+    font-family: sans-serif;            /*THIS IS NOT THE RIGHT FONT*/
+    font-weight: 600;
+    margin: 130px 0px 0px 0px;
+}
+
+#day-title {
+    color: black;
+    font-size: 6.8em;
+    padding: 0px;
+    text-decoration: none;
+    justify-content: top;
+    margin: 0px ;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>lightSlider Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet"  href="src/css/lightslider.css"/>
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="src/js/lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+            $('#image-gallery').lightSlider({
+                item:1,
+                slideMargin: 0,
+                speed:1500,
+                pause:2000,
+                auto:true,
+                loop:true,
+                pager:false,
+                enableTouch:false,
+                enableDrag:false,
+                freeMove:false,
+                controls:false,
+                useCSS:true,
+                cssEasing:'cubic-bezier(1,0,.43,.99)', 
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                } 
+            }); 
+            $('#autoWidth').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#autoWidth').removeClass('cS-hidden');
+                } 
+            });   
+		});
+    </script>
+</head>
+<body>
+	<div class="demo">
+        <div class="item">            
+            <div class="clearfix">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <li> 
+                        <img src="images/image1.jpg" />
+                    </li>
+                    <li> 
+                        <img src="images/image2.jpg" />
+                    </li>
+                    <li> 
+                        <img src="images/image3.jpg" />
+                    </li>
+                    <li> 
+                        <img src="images/image4.jpg" />
+                    </li>
+                    <li> 
+                        <img src="images/image5.jpg" />
+                    </li>
+                    <li> 
+                        <img src="images/image6.jpg" />
+                    </li>
+                    <li> 
+                        <img src="images/image7.jpg" />
+                    </li>
+                    <li> 
+                        <img src="images/image8.jpg" />
+                    </li>
+                    <li> 
+                        <img src="images/image9.jpg" />
+                    </li>
+                    <li> 
+                        <img src="images/image10.jpg" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>	
+</body>
